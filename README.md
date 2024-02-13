@@ -1,4 +1,7 @@
-Arquetipo para los proyectos Spring
+Arquetipo para los proyectos Spring.
+
+Se colocan las carpetas como se verían en un proyecto real.
+Todos los arquetipos son guardados como Features.
 
 Configuramos:
     *Ramas base para GitFlow
