@@ -22,5 +22,6 @@ Spring Inizializr:
 
 
 La rama Main contiene una plantilla lo mas simple posible de un proyecto al 100% de tech
-La rama dev contiene ejemplos en desarrollo o funcionales
+La rama dev contiene ejemplos en desarrollo o funcionales pero solo arquetipo
+La rama fix implementa ejemplos del dev
 
