@@ -1,4 +1,4 @@
-package com.base.artefactoBase;
+package com.base.artefactobase;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package com.base.artefactoBase;
+package com.base.artefactobase;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
