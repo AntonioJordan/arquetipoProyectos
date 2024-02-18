@@ -1,7 +1,11 @@
 Arquetipo para los proyectos Spring.
 
-Se colocan las carpetas como se verían en un proyecto real.
-Todos los arquetipos son guardados como Features.
+La estructura en general de ramas se muestra así para recordar como es una ramificación de un proyecto Profesional Serio.
+
+Los Arquetipos se situan en la carpeta  --> Feature
+Los Proyectos serios se situan en la c. --> Fix
+
+
 
 Configuramos:
 *Ramas base para GitFlow
