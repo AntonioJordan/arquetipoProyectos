@@ -1,4 +1,4 @@
-package com.base.artefactoBase;
+package com.base.artefactobase;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
