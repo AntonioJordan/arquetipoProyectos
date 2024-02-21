@@ -53,7 +53,25 @@ Si queremos hacerlo microservicios:
     *Hyxtrix
 
 
-La rama Main contiene una plantilla lo mas simple posible de un proyecto al 100% de tech
-La rama dev contiene ejemplos en desarrollo o funcionales pero solo arquetipo
-La rama fix implementa ejemplos del dev
+Este Arquetipo funciona correctamente seguir guía --> https://blog.tericcabrel.com/jwt-authentication-springboot-spring-security/
+
+EndPoints de Control de acceso:
+        POST --> http://localhost:8080/auth/signup
+        POST --> http://localhost:8080/auth/login
+        
+        Envíamos por Body: 
+        {
+            "email": "toni@aaaa",
+            "password": "absxcnscisncisn",
+            "fullName": "Toni"
+        }
+
+Explicación del Proyecto:
+
+    -Creamos una BD, con User, esto será por Oracle
+    
+    -Usamos Entity User, User implementa UserDetails de Spring eso nos mete automaticamente 
+    métodos validadores
+
+-
 
