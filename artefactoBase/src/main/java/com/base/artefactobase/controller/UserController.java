@@ -1,4 +1,4 @@
-package com.base.artefactobase.config;
+package com.base.artefactobase.controller;
 
 
 import com.base.artefactobase.entities.User;

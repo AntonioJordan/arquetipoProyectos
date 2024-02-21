@@ -1,4 +1,4 @@
-package com.base.artefactobase.controller;
+package com.base.artefactobase.responses;
 
 import lombok.Data;
 

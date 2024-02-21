@@ -3,6 +3,7 @@ package com.base.artefactobase.controller;
 import com.base.artefactobase.dtos.LoginUserDto;
 import com.base.artefactobase.dtos.RegisterUserDto;
 import com.base.artefactobase.entities.User;
+import com.base.artefactobase.responses.LoginResponse;
 import com.base.artefactobase.service.AuthenticationService;
 import com.base.artefactobase.service.JwtService;
 import org.springframework.http.ResponseEntity;
