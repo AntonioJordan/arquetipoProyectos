@@ -66,12 +66,21 @@ EndPoints de Control de acceso:
             "fullName": "Toni"
         }
 
+        Una vez logado, metemos el token en postman por Bearer Token
+        GET --> http://localhost:8080/users/me
+
+
 Explicación del Proyecto:
 
     -Creamos una BD, con User, esto será por Oracle
     
     -Usamos Entity User, User implementa UserDetails de Spring eso nos mete automaticamente 
-    métodos validadores
+    métodos validadores que ponemos a True para que funcione al login.
+    
+    -Creamos un Controller para el Authentication, este tendrá 2 endpoints signup para crear cuenta y
+    login para volver a entrar, ámbos nos metemos por Postman para usarlo. Este nos devuelve el Token como
+    login Response
 
--
+    -Usamos SecurityConfiguration para decir que Url's se admiten para auth, cuales dejamos sin auth y cuales con.
+
 
