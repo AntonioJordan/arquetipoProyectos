@@ -52,6 +52,27 @@ Si queremos hacerlo microservicios:
     *Eureka Client
     *Hyxtrix
 
+/*******************************************************************
+/****************************Para Swagger***************************
+/*******************************************************************
+
+Se ha configurado Swagger para ser usado con Spring Security, primero deberás crear una cuenta a mano
+(revisa para ello la guía de spring security para saber como usar /signup)
+
+Una vez con usuario y contraseña puedes pasar a 
+http://localhost:8080/swagger-ui/index.html#/user-controller/authenticatedUser
+
+Aquí ya puedes hacer testing. 
+
+Para configurar esto solo hemos agregado las dependencias, metido las url's en Spring Security y 
+creado el Swagger Config.
+
+Nota: esto es para spring docs, Spring Fox está obsoleto y no debe nunca volver a usarse.
+
+/*******************************************************************
+/*************************Para Spring Security**********************
+/*******************************************************************
+
 
 Este Arquetipo funciona correctamente seguir guía --> https://blog.tericcabrel.com/jwt-authentication-springboot-spring-security/
 
