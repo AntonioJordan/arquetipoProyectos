@@ -52,13 +52,17 @@ Si queremos hacerlo microservicios:
     *Eureka Client
     *Hyxtrix
 
+/*******************************************************************
+/*************************Para Spring Security**********************
+/*******************************************************************
+
 
 Este Arquetipo funciona correctamente seguir guía --> https://blog.tericcabrel.com/jwt-authentication-springboot-spring-security/
 
 EndPoints de Control de acceso:
-        POST --> http://localhost:8080/auth/signup
-        POST --> http://localhost:8080/auth/login
-        
+POST --> http://localhost:8080/auth/signup
+POST --> http://localhost:8080/auth/login
+
         Envíamos por Body: 
         {
             "email": "toni@aaaa",

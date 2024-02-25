@@ -1,4 +1,4 @@
-package com.base.artefactobase.config;
+package com.base.artefactobase.config.security;
 
 import com.base.artefactobase.service.JwtService;
 import jakarta.servlet.FilterChain;
