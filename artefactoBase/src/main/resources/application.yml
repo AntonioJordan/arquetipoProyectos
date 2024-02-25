@@ -1,6 +1,8 @@
-
 # Config BD
 spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ANT_PATH_MATCHER
   datasource:
     url: jdbc:oracle:thin:@localhost:1521:ORCL
     username: system
