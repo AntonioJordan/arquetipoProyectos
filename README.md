@@ -29,3 +29,15 @@ La rama Main contiene una plantilla lo mas simple posible de un proyecto al 100%
 La rama dev contiene ejemplos en desarrollo o funcionales pero solo arquetipo
 La rama fix implementa ejemplos del dev
 
+
+El proyecto ideal es aquel que tiene
+    +Lombok
+    +Base datos Oracle o Mongo
+    +JWT y Spring Security integrado a la API
+    +Una buena ruta desde controller a BD
+    +Buena documentación por SwaggerUI/SpringDocs
+    +Optionals, streams, lambdas y reactividad.
+    +Buena integración en Testing Junit5/Mockito
+    
+
+
