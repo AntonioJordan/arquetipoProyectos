@@ -22,6 +22,7 @@ public class Student implements Serializable {
     @ManyToMany
     @JoinTable(
             name = "students_chairs",
+            schema = "JWT_SECURITY",
             joinColumns = @JoinColumn(name = "STUDENT_ID"),
             inverseJoinColumns = @JoinColumn(name = "CHAIR_ID")
     )
