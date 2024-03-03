@@ -9,6 +9,12 @@ spring:
     password: Alpachino123
     driver-class-name: oracle.jdbc.driver.OracleDriver
   jpa:
+    properties:
+      hibernate:
+        hql:
+          bulk_id_strategy:
+            global_temporary:
+              create_tables: false
     hibernate:
       ddl-auto: update
       show-sql: true
