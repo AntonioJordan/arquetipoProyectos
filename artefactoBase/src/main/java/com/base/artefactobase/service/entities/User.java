@@ -18,7 +18,8 @@ import java.util.List;
 @Table(name = "USERS", schema = "JWT_SECURITY")
 public class User implements UserDetails {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "usr_seq")
+    @SequenceGenerator(name = "usr_seq", sequenceName = "usr_seq", allocationSize = 1)
     @Column(nullable = false)
     private Integer id;
 

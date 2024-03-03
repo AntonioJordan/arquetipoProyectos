@@ -10,7 +10,8 @@ import java.util.List;
 @Table(name = "students", schema = "JWT_SECURITY")
 public class Student implements Serializable {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "student_seq")
+    @SequenceGenerator(name = "student_seq", sequenceName = "student_seq", allocationSize = 1)
     @Column(name = "ID")
     private Long id;
 
@@ -21,8 +22,8 @@ public class Student implements Serializable {
     @ManyToMany
     @JoinTable(
             name = "students_chairs",
-            joinColumns = @JoinColumn(name = "CHAIR_ID"),
-            inverseJoinColumns = @JoinColumn(name = "STUDENT_ID")
+            joinColumns = @JoinColumn(name = "STUDENT_ID"),
+            inverseJoinColumns = @JoinColumn(name = "CHAIR_ID")
     )
     private List<Chair> chairs;
 

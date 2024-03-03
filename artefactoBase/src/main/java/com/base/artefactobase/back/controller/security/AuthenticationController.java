@@ -1,6 +1,6 @@
 package com.base.artefactobase.back.controller.security;
 
-import com.base.artefactobase.service.dtos.LoginUserDto;
+import com.base.artefactobase.service.dtos.security.LoginUserDto;
 import com.base.artefactobase.service.dtos.RegisterUserDto;
 import com.base.artefactobase.service.entities.User;
 import com.base.artefactobase.service.responses.LoginResponse;
