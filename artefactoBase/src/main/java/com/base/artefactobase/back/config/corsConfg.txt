@@ -1,0 +1,4 @@
+
+NO HAY CONFIG DE CORS
+
+

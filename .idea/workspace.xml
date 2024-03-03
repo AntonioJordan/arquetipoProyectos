@@ -1,17 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="686e1d18-ca61-48fc-947e-78dac8414dff" name="Changes" comment="Nuevo Readme">
+      <change afterPath="$PROJECT_DIR$/artefactoBase/src/main/java/com/base/artefactobase/back/controller/config/corsConfg.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artefactoBase/src/main/java/com/base/artefactobase/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/artefactoBase/src/main/java/com/base/artefactobase/back/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artefactoBase/src/main/java/com/base/artefactobase/controller/security/AuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/artefactoBase/src/main/java/com/base/artefactobase/back/controller/security/AuthenticationController.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
   <component name="ProjectId" id="2cgL76Sc32aSeZTevzJBc8BAktd" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "settings.editor.selected.configurable": "com.poratu.idea.plugins.tomcat.setting.TomcatServersConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.poratu.idea.plugins.tomcat.setting.TomcatServersConfigurable&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\EspacioDeTrabajo\Proyectos\arquetipoProyectos" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\EspacioDeTrabajo\Proyectos\arquetipoProyectos\artefactoBase\src\main\java\com\base\artefactobase\back\controller\config" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="ArtefactoBaseApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.base.artefactobase.ArtefactoBaseApplication" />
@@ -31,5 +57,12 @@
         <item itemvalue="Application.ArtefactoBaseApplication" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Nuevo Readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="Nuevo Readme" />
   </component>
 </project>

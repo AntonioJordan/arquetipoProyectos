@@ -1,6 +1,6 @@
-package com.base.artefactobase.config.security;
+package com.base.artefactobase.service.config.security;
 
-import com.base.artefactobase.repositories.UserRepository;
+import com.base.artefactobase.service.repositories.UserRepository;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;

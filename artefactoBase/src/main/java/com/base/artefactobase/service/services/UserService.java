@@ -1,8 +1,8 @@
-package com.base.artefactobase.service;
+package com.base.artefactobase.service.services;
 
 
-import com.base.artefactobase.entities.User;
-import com.base.artefactobase.repositories.UserRepository;
+import com.base.artefactobase.service.entities.User;
+import com.base.artefactobase.service.repositories.UserRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;

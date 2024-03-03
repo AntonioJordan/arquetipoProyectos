@@ -1,4 +1,4 @@
-package com.base.artefactobase.responses;
+package com.base.artefactobase.service.responses;
 
 import lombok.Data;
 

@@ -1,4 +1,4 @@
-package com.base.artefactobase.dtos;
+package com.base.artefactobase.service.dtos;
 
 import lombok.Data;
 

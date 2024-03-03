@@ -1,11 +1,11 @@
-package com.base.artefactobase.controller.security;
+package com.base.artefactobase.back.controller.security;
 
-import com.base.artefactobase.dtos.LoginUserDto;
-import com.base.artefactobase.dtos.RegisterUserDto;
-import com.base.artefactobase.entities.User;
-import com.base.artefactobase.responses.LoginResponse;
-import com.base.artefactobase.service.AuthenticationService;
-import com.base.artefactobase.service.JwtService;
+import com.base.artefactobase.service.dtos.LoginUserDto;
+import com.base.artefactobase.service.dtos.RegisterUserDto;
+import com.base.artefactobase.service.entities.User;
+import com.base.artefactobase.service.responses.LoginResponse;
+import com.base.artefactobase.service.services.AuthenticationService;
+import com.base.artefactobase.service.services.JwtService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

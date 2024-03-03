@@ -1,9 +1,9 @@
-package com.base.artefactobase.service;
+package com.base.artefactobase.service.services;
 
-import com.base.artefactobase.dtos.LoginUserDto;
-import com.base.artefactobase.dtos.RegisterUserDto;
-import com.base.artefactobase.entities.User;
-import com.base.artefactobase.repositories.UserRepository;
+import com.base.artefactobase.service.dtos.LoginUserDto;
+import com.base.artefactobase.service.dtos.RegisterUserDto;
+import com.base.artefactobase.service.entities.User;
+import com.base.artefactobase.service.repositories.UserRepository;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.crypto.password.PasswordEncoder;

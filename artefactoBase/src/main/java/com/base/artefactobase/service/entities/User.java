@@ -1,4 +1,4 @@
-package com.base.artefactobase.entities;
+package com.base.artefactobase.service.entities;
 
 import jakarta.persistence.*;
 import lombok.*;

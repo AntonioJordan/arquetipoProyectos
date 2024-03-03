@@ -1,4 +1,4 @@
-package com.base.artefactobase.config.swagger;
+package com.base.artefactobase.service.config.swagger;
 
 import io.swagger.v3.oas.models.Components;
 import io.swagger.v3.oas.models.OpenAPI;

@@ -1,7 +1,7 @@
-package com.base.artefactobase.repositories;
+package com.base.artefactobase.service.repositories;
 
 
-import com.base.artefactobase.entities.User;
+import com.base.artefactobase.service.entities.User;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
