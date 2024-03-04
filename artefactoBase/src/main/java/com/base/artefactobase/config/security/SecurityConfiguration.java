@@ -29,22 +29,18 @@ public class SecurityConfiguration {
         this.jwtAuthenticationFilter = jwtAuthenticationFilter;
     }
 
+    //--------------------------------------PARA DESARROLLO DESACTIVAMOS LA SEGURIDAD POR JWT YA QUE
+    //--------------------------------------SPRING 3 + SWAGGER + JWT NO SE SOPORTAN
+    //--------------------------------------TENEMOS QUE QUITAR JWT SI QUEREMOS MANTENER SPRING 3
+    //--------------------------------------PARA REACTIVAR HAZ SWITCH ENTRE securityFilterChain COLOCADOS
+
+
+    //JWT OFF
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-        http.csrf()
-                .disable()
-                .authorizeHttpRequests()
-                .requestMatchers("/auth/**", "/v3/api-docs/**", "/swagger-ui/**", "/swagger-ui.html","/v2/api-docs",
-                        "/swagger-resources",
-                        "/swagger-resources/**",
-                        "/configuration/ui",
-                        "/configuration/security",
-                        "/swagger-ui.html",
-                        "/webjars/**",
-                        "/v3/api-docs/**",
-                        "/swagger-ui/**").permitAll()
-                .anyRequest()
-                .authenticated()
+        http.csrf().disable()
+                .authorizeRequests()
+                .anyRequest().permitAll()
                 .and()
                 .sessionManagement()
                 .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
@@ -54,6 +50,34 @@ public class SecurityConfiguration {
 
         return http.build();
     }
+
+    //JWT ON
+//
+//    @Bean
+//    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
+//        http.csrf()
+//                .disable()
+//                .authorizeHttpRequests()
+//                .requestMatchers("/auth/**", "/v3/api-docs/**", "/swagger-ui/**", "/swagger-ui.html","/v2/api-docs",
+//                        "/swagger-resources",
+//                        "/swagger-resources/**",
+//                        "/configuration/ui",
+//                        "/configuration/security",
+//                        "/swagger-ui.html",
+//                        "/webjars/**",
+//                        "/v3/api-docs/**",
+//                        "/swagger-ui/**").permitAll()
+//                .anyRequest()
+//                .authenticated()
+//                .and()
+//                .sessionManagement()
+//                .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
+//                .and()
+//                .authenticationProvider(authenticationProvider)
+//                .addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class);
+//
+//        return http.build();
+//    }
 
     @Bean
     CorsConfigurationSource corsConfigurationSource() {
