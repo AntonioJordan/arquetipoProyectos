@@ -25,4 +25,9 @@ public class ChairProxyImpl implements ChairProxy {
     public List<ChairDto> getAllChairs() {
         return chairMapper.chairsToChairDtos(chairService.getAllChairs());
     }
+
+    @Override
+    public String deleteChair(Long id) {
+        return chairService.deleteChair(id);
+    }
 }

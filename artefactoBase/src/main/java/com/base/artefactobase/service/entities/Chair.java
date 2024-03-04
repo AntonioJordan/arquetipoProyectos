@@ -3,6 +3,8 @@ package com.base.artefactobase.service.entities;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
 
 import java.io.Serializable;
 import java.util.List;
@@ -24,7 +26,9 @@ public class Chair implements Serializable {
     private String name;
 
     @JsonIgnore
-    @ManyToMany(mappedBy = "chairs")
+    @ManyToMany(mappedBy = "chairs", cascade = CascadeType.REMOVE)
+    @OnDelete(action = OnDeleteAction.CASCADE) //SOLO ORACLE
+
     private List<Student> students;
 
 }

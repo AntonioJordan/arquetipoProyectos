@@ -3,6 +3,8 @@ package com.base.artefactobase.service.entities;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
 
 import java.io.Serializable;
 import java.util.List;
@@ -24,7 +26,8 @@ public class Student implements Serializable {
     private String name;
 
     @JsonIgnore
-    @ManyToMany
+    @ManyToMany(cascade = CascadeType.REMOVE)
+    @OnDelete(action = OnDeleteAction.CASCADE)
     @JoinTable(
             name = "students_chairs",
             schema = "JWT_SECURITY",

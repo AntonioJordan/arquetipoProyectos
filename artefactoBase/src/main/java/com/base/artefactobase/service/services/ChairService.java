@@ -8,4 +8,5 @@ import java.util.List;
 @Component
 public interface ChairService {
     List<Chair> getAllChairs();
+    String deleteChair(Long id);
 }

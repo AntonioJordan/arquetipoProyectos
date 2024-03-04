@@ -9,4 +9,5 @@ import java.util.List;
 @Component
 public interface ChairProxy {
     List<ChairDto> getAllChairs();
+    String deleteChair(Long id);
 }
