@@ -14,9 +14,10 @@ public class SwaggerConfig {
     public OpenAPI customOpenAPI() {
         return new OpenAPI()
                 .components(new Components()
-                        .addSecuritySchemes("basicScheme", new SecurityScheme()
+                        .addSecuritySchemes("bearerAuth", new SecurityScheme()
                                 .type(SecurityScheme.Type.HTTP)
-                                .scheme("basic")))
+                                .scheme("bearer")
+                                .bearerFormat("JWT")))
                 .info(new Info()
                         .title("API Documentation")
                         .version("1.0")

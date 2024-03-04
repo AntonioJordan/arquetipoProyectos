@@ -69,6 +69,13 @@ creado el Swagger Config.
 
 Nota: esto es para spring docs, Spring Fox está obsoleto y no debe nunca volver a usarse.
 
+Para usar Swagger-Oauth
+
+    1º Vamos a /auth/login en swagger-UI y metemos lo mismo que en el postman.
+    2º Usamos el Candado y metemos el Token que nos da el login.
+    3º Ya podemos hacer peticiones normales.
+
+
 /*******************************************************************
 /*************************Para Spring Security**********************
 /*******************************************************************
