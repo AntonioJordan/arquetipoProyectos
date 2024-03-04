@@ -6,6 +6,7 @@ import com.base.artefactobase.service.entities.Chair;
 import com.base.artefactobase.service.entities.Student;
 import com.base.artefactobase.service.mappers.ChairMapper;
 import com.base.artefactobase.service.mappers.StudentMapper;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
@@ -14,28 +15,11 @@ import java.util.List;
 @Component
 public class ChairMapperImpl implements ChairMapper {
 
-    @Override
-    public ChairDto chairToChairDto(Chair chair) {
-        if (chair == null) {
-            return null;
-        }
+    private final StudentMapper studentMapper;
 
-        ChairDto chairDto = new ChairDto();
-        chairDto.setId(chair.getId());
-        chairDto.setName(chair.getName());
-        return chairDto;
-    }
-
-    @Override
-    public Chair chairDtoToChair(ChairDto chairDto) {
-        if (chairDto == null) {
-            return null;
-        }
-
-        Chair chair = new Chair();
-        chair.setId(chairDto.getId());
-        chair.setName(chairDto.getName());
-        return chair;
+    @Autowired
+    public ChairMapperImpl(StudentMapper studentMapper) {
+        this.studentMapper = studentMapper;
     }
 
     @Override
@@ -49,7 +33,7 @@ public class ChairMapperImpl implements ChairMapper {
             ChairDto chairDto = chairToChairDto(chair);
             List<StudentDto> studentDtos = new ArrayList<>();
             for (Student student : chair.getStudents()) {
-                studentDtos.add(StudentMapper.INSTANCE.studentToStudentDto(student));
+                studentDtos.add(studentMapper.studentToStudentDto(student));
             }
             chairDto.setStudents(studentDtos);
             chairDtos.add(chairDto);
@@ -65,8 +49,52 @@ public class ChairMapperImpl implements ChairMapper {
 
         List<Chair> chairs = new ArrayList<>();
         for (ChairDto chairDto : chairDtos) {
-            chairs.add(chairDtoToChair(chairDto));
+            Chair chair = chairDtoToChair(chairDto);
+            List<Student> students = new ArrayList<>();
+            for (StudentDto studentDto : chairDto.getStudents()) {
+                students.add(studentMapper.studentDtoToStudent(studentDto));
+            }
+            chair.setStudents(students);
+            chairs.add(chair);
         }
         return chairs;
+    }
+
+    @Override
+    public Chair chairDtoToChair(ChairDto chairDto) {
+        if (chairDto == null) {
+            return null;
+        }
+
+        Chair chair = new Chair();
+        chair.setId(chairDto.getId());
+        chair.setName(chairDto.getName());
+
+        List<Student> students = new ArrayList<>();
+        for (StudentDto studentDto : chairDto.getStudents()) {
+            students.add(studentMapper.studentDtoToStudent(studentDto));
+        }
+        chair.setStudents(students);
+
+        return chair;
+    }
+
+    @Override
+    public ChairDto chairToChairDto(Chair chair) {
+        if (chair == null) {
+            return null;
+        }
+
+        ChairDto chairDto = new ChairDto();
+        chairDto.setId(chair.getId());
+        chairDto.setName(chair.getName());
+
+        List<StudentDto> studentDtos = new ArrayList<>();
+        for (Student student : chair.getStudents()) {
+            studentDtos.add(studentMapper.studentToStudentDto(student));
+        }
+        chairDto.setStudents(studentDtos);
+
+        return chairDto;
     }
 }

@@ -19,4 +19,15 @@ public class StudentMapperImpl implements StudentMapper {
                 .name(student.getName())
                 .build();
     }
+    @Override
+    public Student studentDtoToStudent(StudentDto studentDto) {
+        if (studentDto == null) {
+            return null;
+        }
+
+        return Student.builder()
+                .id(studentDto.getId())
+                .name(studentDto.getName())
+                .build();
+    }
 }
