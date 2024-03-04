@@ -7,6 +7,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
+import java.util.Optional;
 
 @Slf4j
 @Component
@@ -19,18 +20,18 @@ public class ChairServiceImpl implements ChairService {
     }
 
     @Override
-    public List<Chair> getAllChairs() {
-        return chairRepository.findAll();
+    public Optional<List<Chair>> getAllChairs() {
+        return Optional.ofNullable(chairRepository.findAll());
     }
 
     @Override
-    public String deleteChair(Long id) {
+    public Optional<String> deleteChair(Long id) {
         try {
             chairRepository.deleteById(id);
         } catch (Exception e) {
             log.info("The Chair could not be removed.");
-            return "";
+            return Optional.empty();
         }
-        return "The chair has been removed";
+        return Optional.of("The chair has been removed");
     }
 }

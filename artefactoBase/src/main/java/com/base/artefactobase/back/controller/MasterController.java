@@ -26,7 +26,8 @@ public class MasterController {
 
     @GetMapping("/chair/delete/{id}")
     public String deleteChair(@PathVariable Long id) {
-        return chairProxy.deleteChair(id);
+
+        return chairProxy.deleteChair(id).isPresent() ? chairProxy.deleteChair(id).get() : "IT HAS BEEN AN ERROR";
     }
 
 }
