@@ -1,4 +1,4 @@
-package com.base.artefactobase.service.services;
+package com.base.artefactobase.service.services.security;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;

@@ -1,5 +1,6 @@
 package com.base.artefactobase.back.controller;
 
+import com.base.artefactobase.service.dtos.ChairDto;
 import com.base.artefactobase.service.entities.Chair;
 import com.base.artefactobase.service.proxies.ChairProxy;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -18,7 +19,7 @@ public class MasterController {
     }
 
     @GetMapping("/chair")
-    public List<Chair> getChairs() {
+    public List<ChairDto> getChairs() {
         return chairProxy.getAllChairs();
     }
 

@@ -1,6 +1,6 @@
 package com.base.artefactobase.service.config.security;
 
-import com.base.artefactobase.service.services.JwtService;
+import com.base.artefactobase.service.services.security.JwtService;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

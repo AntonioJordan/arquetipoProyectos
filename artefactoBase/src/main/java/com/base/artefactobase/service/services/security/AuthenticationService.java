@@ -1,4 +1,4 @@
-package com.base.artefactobase.service.services;
+package com.base.artefactobase.service.services.security;
 
 import com.base.artefactobase.service.dtos.security.LoginUserDto;
 import com.base.artefactobase.service.dtos.RegisterUserDto;

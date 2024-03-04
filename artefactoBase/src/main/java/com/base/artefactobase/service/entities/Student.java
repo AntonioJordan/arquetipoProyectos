@@ -2,12 +2,17 @@ package com.base.artefactobase.service.entities;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
+import lombok.*;
 
 import java.io.Serializable;
 import java.util.List;
 
 @Entity
 @Table(name = "students", schema = "JWT_SECURITY")
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+@Data
 public class Student implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "student_seq")

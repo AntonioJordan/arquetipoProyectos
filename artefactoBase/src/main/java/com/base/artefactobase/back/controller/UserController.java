@@ -2,7 +2,7 @@ package com.base.artefactobase.back.controller;
 
 
 import com.base.artefactobase.service.entities.User;
-import com.base.artefactobase.service.services.UserService;
+import com.base.artefactobase.service.services.security.UserService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;

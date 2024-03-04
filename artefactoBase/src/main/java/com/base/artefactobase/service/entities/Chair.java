@@ -2,15 +2,16 @@ package com.base.artefactobase.service.entities;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
-import lombok.Builder;
-import lombok.Getter;
+import lombok.*;
 
 import java.io.Serializable;
 import java.util.List;
 
-@Getter
+@Data
 @Builder
 @Entity
+@NoArgsConstructor
+@AllArgsConstructor
 @Table(name = "chairs", schema = "JWT_SECURITY")
 public class Chair implements Serializable {
     @Id
