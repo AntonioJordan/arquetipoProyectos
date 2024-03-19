@@ -5,16 +5,46 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="686e1d18-ca61-48fc-947e-78dac8414dff" name="Changes" comment="Nuevo Readme">
-      <change afterPath="$PROJECT_DIR$/artefactoBase/src/main/java/com/base/artefactobase/back/controller/config/corsConfg.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/artefactoBase/src/main/java/com/base/artefactobase/back/controller/WarehouseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/artefactoBase/src/main/java/com/base/artefactobase/service/dtos/responses/PencilRespDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/artefactoBase/src/main/java/com/base/artefactobase/service/entities/Pencil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/artefactoBase/src/main/java/com/base/artefactobase/service/mappers/PencilMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/artefactoBase/src/main/java/com/base/artefactobase/service/mappers/impl/PencilMapperImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/artefactoBase/src/main/java/com/base/artefactobase/service/proxies/PencilProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/artefactoBase/src/main/java/com/base/artefactobase/service/proxies/impl/PencilProxyImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/artefactoBase/src/main/java/com/base/artefactobase/service/repositories/PencilRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/artefactoBase/src/main/java/com/base/artefactobase/service/services/PencilService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/artefactoBase/src/main/java/com/base/artefactobase/service/services/impl/PencilServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/artefactoBase/src/test/java/com/base/artefactobase/back/controllers/WarehouseControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/artefactoBase/src/test/java/com/base/artefactobase/security/ApplicationConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/artefactoBase/src/test/java/com/base/artefactobase/security/AuthenticationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/artefactoBase/src/test/java/com/base/artefactobase/security/JwtAuthenticationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/artefactoBase/src/test/java/com/base/artefactobase/security/SecurityConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artefactoBase/src/main/java/com/base/artefactobase/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/artefactoBase/src/main/java/com/base/artefactobase/back/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artefactoBase/src/main/java/com/base/artefactobase/controller/security/AuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/artefactoBase/src/main/java/com/base/artefactobase/back/controller/security/AuthenticationController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2cgL76Sc32aSeZTevzJBc8BAktd" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -27,6 +57,8 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Fix/BD+JWT+Swagger-ProyectoSerio&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/EspacioDeTrabajo/Proyectos/arquetipoProyectos/artefactoBase/src/test/java/com/base/artefactobase&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;com.poratu.idea.plugins.tomcat.setting.TomcatServersConfigurable&quot;
   }
 }</component>
@@ -38,13 +70,13 @@
       <recent name="C:\EspacioDeTrabajo\Proyectos\arquetipoProyectos\artefactoBase\src\main\java\com\base\artefactobase\back\controller\config" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.WarehouseControllerTest">
     <configuration name="ArtefactoBaseApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.base.artefactobase.ArtefactoBaseApplication" />
       <module name="demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.base.artefactobase.*" />
+          <option name="PATTERN" value="com.base.artefactobase.security.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -52,14 +84,83 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WarehouseControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.base.artefactobase.back.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.base.artefactobase.back.controllers" />
+      <option name="MAIN_CLASS_NAME" value="com.base.artefactobase.back.controllers.WarehouseControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WarehouseControllerTest.getAllPencils" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.base.artefactobase.back.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.base.artefactobase.back.controllers" />
+      <option name="MAIN_CLASS_NAME" value="com.base.artefactobase.back.controllers.WarehouseControllerTest" />
+      <option name="METHOD_NAME" value="getAllPencils" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WarehouseControllerTest.getAllPencilsById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.base.artefactobase.back.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.base.artefactobase.back.controllers" />
+      <option name="MAIN_CLASS_NAME" value="com.base.artefactobase.back.controllers.WarehouseControllerTest" />
+      <option name="METHOD_NAME" value="getAllPencilsById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.WarehouseControllerTest" />
+        <item itemvalue="JUnit.WarehouseControllerTest.getAllPencilsById" />
         <item itemvalue="Application.ArtefactoBaseApplication" />
+        <item itemvalue="JUnit.WarehouseControllerTest.getAllPencils" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="686e1d18-ca61-48fc-947e-78dac8414dff" name="Changes" comment="Nuevo Readme" />
+      <created>1710520173592</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1710520173592</updated>
+    </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Nuevo Readme" />
